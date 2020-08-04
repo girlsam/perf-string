@@ -1,0 +1,16 @@
+{
+  "name": "perfect-substring",
+  "version": "1.0.0",
+  "description": "Quick repo to implement perfect string solution",
+  "main": "app.js",
+  "scripts": {
+    "test": "mocha"
+  },
+  "type": "module",
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "chai": "^4.2.0",
+    "mocha": "^8.1.0"
+  }
+}
