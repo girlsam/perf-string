@@ -4,13 +4,21 @@
   "description": "Quick repo to implement perfect string solution",
   "main": "app.js",
   "scripts": {
-    "test": "mocha"
+    "test": "mocha",
+    "start": "node app.js",
+    "hot-start": "nodemon app.js"
   },
   "type": "module",
   "author": "",
   "license": "ISC",
+  "nodemonConfig": {
+    "ignore": ["test/*"]
+  },
   "dependencies": {
     "chai": "^4.2.0",
     "mocha": "^8.1.0"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.4"
   }
 }
