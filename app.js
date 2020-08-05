@@ -24,23 +24,37 @@ perfectSubstring has the following parameters:
 */
 
 const perfectSubstring = (s, k) => {
-  let perfectCount = 0;
+  if (s.length < k || !s.length) return 0;
 
-  const stringArr = s.split('');
+  let count = 0;
 
-  for (let i = 0; i < stringArr.length; i++) {
-    for (let j = 0; j < stringArr.length - 1; j++) {
+  for (let i = 0; i < s.length - 1; i++) {
+    for (let j = i; j < s.length; j++) {
+      let sub = s.substring(i, j + 1);
+      let freq;
 
-      // j is my substring
+      if (sub.length > 1) {
+        freq = [...sub].reduce((acc, curr) => {
+          acc[curr] ? acc[curr]++ : acc[curr] = 1;
+          return acc;
+        }, {});
 
-      let kCount = 0;
+        let isPerfect = true;
 
+        for (let key in freq) {
+          if (freq[key] !== k) {
+            isPerfect = false;
+          }
+        }
 
+        if (isPerfect) {
+          count++;
+        }
+      }
     }
   }
 
+  return count;
 }
-
-console.log(perfectSubstring('1102021222', 2));
 
 export default perfectSubstring;
