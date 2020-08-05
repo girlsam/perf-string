@@ -9,8 +9,12 @@
     "hot-start": "nodemon app.js"
   },
   "type": "module",
-  "author": "",
+  "author": "Sam Goldsmith",
   "license": "ISC",
+  "engines": {
+    "node": ">14.0.0",
+    "npm": ">6.0.0"
+  },
   "nodemonConfig": {
     "ignore": ["test/*"]
   },
