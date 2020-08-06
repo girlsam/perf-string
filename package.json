@@ -5,8 +5,8 @@
   "main": "app.js",
   "scripts": {
     "test": "mocha",
-    "start": "node app.js",
-    "hot-start": "nodemon app.js"
+    "start:dev": "node app.js",
+    "start:watch": "nodemon app.js"
   },
   "type": "module",
   "author": "Sam Goldsmith",

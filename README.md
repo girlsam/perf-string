@@ -14,8 +14,10 @@ Definitely not the most efficient. This is `O(n^3)`, so yeah, it could use a bit
 1. Fork or clone repo
 1. run `npm i`
 1. To run test suite: `npm test`
-1. To run `perfectSubstring` method: `npm start`
-1. Option for hot reloading with `npm run hot-start`
+1. To work with `perfectSubstring` method: `npm run start` OR
+1. Option for hot reloading with `npm run start:dev`
+
+***
 
 ##### Prompt: 
 There is s that consists of digits from 0 to 9, and an integer k. A substring s[L:R] (where 0 = L = R < sizeof(s) ) is a contiguous group of characters with s.  A substring is called a perfect substring if all of its elements occur exactly k times. 
