@@ -8,6 +8,7 @@ Definitely not the most efficient. This is `O(n^3)`, so yeah, it could use a bit
 1. `Node v14.6.0`
 1. `npm v6.14.7`
 1. npm packages `mocha` and `chai` for test suite
+1. `nodemon` for hot reloading
 
 #### To run locally
 1. Fork or clone repo
