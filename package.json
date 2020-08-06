@@ -4,8 +4,8 @@
   "description": "Quick repo to implement perfect string solution",
   "main": "app.js",
   "scripts": {
-    "test": "mocha",
-    "start:dev": "node app.js",
+    "test": "mocha --require @babel/register 'test/*.js'",
+    "start:dev": "node --exec babel-node app.js",
     "start:watch": "nodemon app.js"
   },
   "type": "module",
@@ -16,13 +16,18 @@
     "npm": ">6.0.0"
   },
   "nodemonConfig": {
-    "ignore": ["test/*"]
+    "ignore": [
+      "test/*"
+    ]
   },
   "dependencies": {
     "chai": "^4.2.0",
     "mocha": "^8.1.0"
   },
   "devDependencies": {
+    "@babel/core": "^7.11.1",
+    "@babel/node": "^7.10.5",
+    "@babel/register": "^7.10.5",
     "nodemon": "^2.0.4"
   }
 }
