@@ -14,9 +14,6 @@ export default function perfectSubstring(s, k) {
 }
 
 function isPerfect(str, k) {
-  const freq = str.split('').reduce((acc, curr) => {
-      acc[curr] = (acc[curr] || 0) + 1;
-      return acc;
-    }, {})
+  const freq = str.split('').reduce((acc, curr) => (acc[curr] = ++acc[curr] || 1, acc), {});
   return Object.keys(freq).every((key) => freq[key] === k);
 }
