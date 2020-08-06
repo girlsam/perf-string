@@ -15,7 +15,7 @@ Definitely not the most efficient. This is `O(n^3)`, so yeah, it could use a bit
 1. run `npm i`
 1. To run test suite: `npm test`
 1. To work with `perfectSubstring` method: `npm run start` OR
-1. Option for hot reloading with `npm run start:dev`
+1. Option for hot reloading with `npm run start:watch`
 
 ***
 
