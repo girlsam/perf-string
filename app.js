@@ -3,9 +3,9 @@ export default function perfectSubstring(s, k) {
 
   let count = 0;
 
-  for (let i = 0; i < s.length - 1; i++) {
-    for (let j = i; j < s.length; j++) {
-      const ss = s.substring(i, j + 1);
+  for (let start = 0; start < s.length - 1; start++) {
+    for (let end = start; end < s.length; end++) {
+      const ss = s.substring(start, end + 1);
       if (ss.length >= k && isPerfect(ss, k)) count++;
     }
   }
