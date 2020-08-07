@@ -1,5 +1,5 @@
 export default function perfectSubstring(s, k) {
-  if (s.length < k || !s.length) return 0;
+  if (s.length < k || !s.length || k === 0) return 0;
 
   let count = 0;
 

@@ -20,4 +20,12 @@ describe('#perfectSubstring', () => {
   it('should return 0 when given an empty string', () => {
     expect(perfectSubstring('', 7)).to.equal(0);
   });
+
+  it('should return 0 when given an empty string', () => {
+    expect(perfectSubstring('', 7)).to.equal(0);
+  });
+
+  it('should return 0 when given frequency is 0, k=0', () => {
+    expect(perfectSubstring('23467', 0)).to.equal(0);
+  });
 });
