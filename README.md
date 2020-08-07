@@ -2,23 +2,24 @@
 
 Solution and test suite for `perfectString` algorithm.
 
-#### Areas for optimization
-* *Improve efficiency.* This algorithm's time complexity is `O(n^3)` which is not optimal. A goal is to improve its complexity to `O(n^2)`.
-* *Address edge cases.* What if `k=1` or `s.length=100000`? This lends itself to improvements in the alogorithm's efficiency based on its inputs.
-* *Recursion.* It would be a fun exercise to attempt this solution with a recursive algorithm, however I wonder about the memory implications of using recursion here. 
-
-#### Tech used
+#### Technology used
 1. `Node v14.6.0`
 1. `npm v6.14.7`
-1. npm packages `mocha` and `chai` for test suite
+1. `mocha` and `chai` for test suite
+1. `babel` for transpiling ES6
 1. `nodemon` for hot reloading
 
 #### To run locally
 1. Fork or clone repo
-1. run `npm i`
-1. To run test suite: `npm test`
-1. To work with `perfectSubstring` method: `npm run start` OR
+1. Run `npm i`
+1. To run test suite, use command `npm test`
+1. To run `perfectSubstring`, use command `npm run start:dev` OR
 1. Option for hot reloading with `npm run start:watch`
+
+#### Areas for optimization
+* *Improve efficiency.* This algorithm's time complexity is `O(n^3)` which is not optimal. A goal is to improve its complexity to `O(n^2)`.
+* *Address edge cases.* What if `k=1` or `s.length=100000`? This lends itself to improvements in the alogorithm's efficiency based on its inputs.
+* *Recursion.* It would be a fun exercise to attempt this solution with a recursive algorithm, however I wonder about the memory implications of using recursion here. 
 
 ***
 
