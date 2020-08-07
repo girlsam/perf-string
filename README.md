@@ -2,7 +2,10 @@
 
 Solution and test suite for `perfectString` algorithm.
 
-Definitely not the most efficient. This is `O(n^3)`, so yeah, it could use a bit of optimization.
+#### Areas for optimization
+* *Improve efficiency.* This algorithm's time complexity is `O(n^3)` which is not optimal. A goal is to improve its complexity to `O(n^2)`.
+* *Address edge cases.* What if `k=1` or `s.length=100000`? This lends itself to improvements in the alogorithm's efficiency based on its inputs.
+* *Recursion.* It would be a fun exercise to attempt this solution with a recursive algorithm, however I wonder about the memory implications of using recursion here. 
 
 #### Tech used
 1. `Node v14.6.0`
