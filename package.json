@@ -5,7 +5,7 @@
   "main": "app.js",
   "scripts": {
     "test": "mocha --require @babel/register 'test/*.js'",
-    "start:dev": "node --exec babel-node app.js",
+    "start:dev": "babel-node app.js",
     "start:watch": "nodemon --exec babel-node app.js"
   },
   "author": "Sam Goldsmith",
